@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="index.css" rel="stylesheet" />
+    <title>ToDoApp</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">ToDoApp</h1>
+                <form id="search-tasks">
+                    <label>
+                        <input type="text" placeholder="Search tasks..." />
+                    </label>
+                </form>
+            </div>
+        </header>
+        
+        <div id="task-list">
+            <h2 class="title">Tasks</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input class="checkboxes" type="checkbox">
+                    </label>
+                    <span class="name">Complete frontend tasks for the day</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <label>
+                        <input class="checkboxes" type="checkbox">
+                    </label>
+                    <span class="name">Go home</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <label>
+                        <input class="checkboxes" type="checkbox">
+                    </label>
+                    <span class="name">Code a little at home</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <label>
+                        <input class="checkboxes" type="checkbox">
+                    </label>
+                    <span class="name">Sleep</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+        
+        <form id="add-task">
+            <label>
+                <input type="text" placeholder="Add a Task..." required/>
+            </label>
+            <button>Add</button>
+        </form>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
